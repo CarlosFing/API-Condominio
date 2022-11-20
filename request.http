@@ -1,0 +1,46 @@
+###
+GET http://localhost:9000/api HTTP/1.1
+
+
+
+###
+GET http://localhost:9000/PerfilNombre HTTP/1.1
+
+###
+GET http://localhost:9000/Perfil HTTP/1.1
+
+
+###
+POST http://localhost:9000/Perfil HTTP/1.1
+Content-Type: application/json
+
+{
+        "Nombre" : "Jose Pablo",
+        "Email":"jose@gmail.com",
+        "Password" : "jose123",
+        "Telefono": "6681614159"
+}
+
+###
+Get http://localhost:9000/Login HTTP/1.1
+Content-Type: application/json
+
+{
+        "Usuario": "Carlos Fing"
+          
+}
+
+###
+PUT http://localhost:9000/Perfil/2 HTTP/1.1
+Content-Type: application/json
+
+{
+        "Nombre" : "Rodrigo Perez",
+        "Email":"rodrigo@gmail.com",
+        "Password" : "rodrigo123",
+        "Telefono": "6681697159"
+}
+
+
+
+
